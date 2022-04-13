@@ -90,7 +90,7 @@ for (let i = 0; i < 10; i++) {
 */
 
 for (let i = 0; i < 10; i++) {
-  console.log(`${i + 1}`);
+  console.log(i + 1);
 }
 
 ////////// PROBLEM 7 //////////
@@ -99,7 +99,9 @@ for (let i = 0; i < 10; i++) {
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
+for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
 
 
 ////////// PROBLEM 8 //////////
