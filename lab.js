@@ -15,10 +15,10 @@ if (lovesCode === true) {
 }
 
 // For problems 2-3 use the following lines of code:
-var amysAge = 29;
-var brittanisAge = 34;
-var amysBirthYear = 1991;
-var brittanisBirthYear = 1986;
+let amysAge = 29;
+let brittanisAge = 29;
+let amysBirthYear = 1991;
+let brittanisBirthYear = 1986;
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +26,14 @@ var brittanisBirthYear = 1986;
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-//CODE HERE
+if (amysAge === brittanisAge) {
+  console.log(`amy (${amysAge}) is the same age as brittani (${brittanisAge})`);
+} else if (amysAge > brittanisAge){
+  console.log(`amy (${amysAge}) is older than brittani (${brittanisAge})`);
+} else {
+  console.log(`brittani (${brittanisAge}) is older than amy (${amysAge})`);
+}
+
 
 ////////// PROBLEM 3 //////////
 
@@ -34,7 +41,13 @@ var brittanisBirthYear = 1986;
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+if (amysBirthYear === brittanisBirthYear) {
+  console.log(`amy (${amysBirthYear}) and brittani (${brittanisBirthYear}) were bornn in the same year`);
+} else if (amysBirthYear > brittanisBirthYear){
+  console.log(`amy (${amysBirthYear}) was born after brittani (${brittanisBirthYear})`);
+} else if (amysBirthYear < brittanisBirthYear) {
+  console.log(`amy (${amysBirthYear}) was born before brittani (${brittanisBirthYear})`);
+}
 
 ////////// PROBLEM 4 //////////
 
